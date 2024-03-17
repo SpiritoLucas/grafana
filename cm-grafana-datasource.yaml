@@ -6,7 +6,7 @@ data:
     - name: Prometheus
       type: prometheus
       uid: prometheus
-      url: http://prometheus-op-kube-prometh-prometheus.observability:9090/
+      url: http://prometheus-op-kube-prometh-prometheus.logs:9090/
       access: proxy
       isDefault: true
       jsonData:
@@ -15,7 +15,7 @@ data:
     - name: Alertmanager
       type: alertmanager
       uid: alertmanager
-      url: http://prometheus-op-kube-prometh-alertmanager.observability:9093/
+      url: http://prometheus-op-kube-prometh-alertmanager.logs:9093/
       access: proxy
       jsonData:
         handleGrafanaManagedAlerts: false
@@ -27,4 +27,4 @@ metadata:
     app.kubernetes.io/part-of: kube-prometheus-stack
     app.kubernetes.io/version: 51.10.0
   name: cm-grafana-datasource
-  namespace: observability
+  namespace: logs

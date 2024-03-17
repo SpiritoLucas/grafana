@@ -5,7 +5,7 @@ metadata:
     app.kubernetes.io/name: grafana-central
     app.kubernetes.io/version: 10.1.5
   name: grafana
-  namespace: observability
+  namespace: logs
 spec:
   endpoints:
   - honorLabels: true
@@ -16,7 +16,7 @@ spec:
   jobLabel: prometheus-op
   namespaceSelector:
     matchNames:
-    - observability
+    - logs
   selector:
     matchLabels:
       app.kubernetes.io/name: grafana-central
