@@ -13,5 +13,5 @@ resources:
 - rb-grafana.yaml
 - role-grafana.yaml
 - sa-grafana.yaml
-- svc-monitor.yaml
+#- svc-monitor.yaml
 - svc.yaml
