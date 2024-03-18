@@ -9,7 +9,7 @@ data:
     mode = console
     [paths]
     data = /var/lib/grafana/
-    logs = /var/log/grafana
+    observability = /var/log/grafana
     plugins = /var/lib/grafana/plugins
     provisioning = /etc/grafana/provisioning
     [server]
@@ -20,4 +20,4 @@ metadata:
     app.kubernetes.io/name: grafana-central
     app.kubernetes.io/version: 10.1.5
   name: cm-grafana
-  namespace: logs
+  namespace: observability
