@@ -4,7 +4,7 @@ metadata:
   labels:
     app.kubernetes.io/name: grafana-central
   name: grafana
-  namespace: observability
+  namespace: grafana
 spec:
   replicas: 1
   revisionHistoryLimit: 3

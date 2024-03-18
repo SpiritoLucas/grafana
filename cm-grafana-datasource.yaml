@@ -27,4 +27,4 @@ metadata:
     app.kubernetes.io/part-of: kube-prometheus-stack
     app.kubernetes.io/version: 51.10.0
   name: cm-grafana-datasource
-  namespace: observability
+  namespace: grafana
