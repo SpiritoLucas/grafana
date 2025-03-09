@@ -9,7 +9,7 @@ resources:
 - crb-grafana.yaml
 - deploy-grafana.yaml
 - grafana-ingress.yaml
-#- grafana-pvc.yaml
+- grafana-pvc.yaml
 - rb-grafana.yaml
 - role-grafana.yaml
 - sa-grafana.yaml
