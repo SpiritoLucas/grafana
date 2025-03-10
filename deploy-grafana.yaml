@@ -208,5 +208,5 @@ spec:
           name: cm-grafana-config-dashboards
         name: sc-dashboard-provider
       - name: sc-datasources-volume
-        #persistentVolumeClaim:
-        #  claimName: grafana-pvc
+        persistentVolumeClaim:
+          claimName: grafana-pvc
