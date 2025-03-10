@@ -15,4 +15,3 @@ resources:
 - sa-grafana.yaml
 #- svc-monitor.yaml
 - svc.yaml
-- vpa.yaml
