@@ -54,6 +54,12 @@ spec:
         image: quay.io/kiwigrid/k8s-sidecar:1.25.1
         imagePullPolicy: IfNotPresent
         name: grafana-sc-dashboard
+        resources:
+          limits:
+            memory: 400Mi
+          requests:
+            cpu: 100m
+            memory: 200Mi
         securityContext:
           allowPrivilegeEscalation: false
           capabilities:
@@ -93,6 +99,12 @@ spec:
         image: quay.io/kiwigrid/k8s-sidecar:1.25.1
         imagePullPolicy: IfNotPresent
         name: grafana-sc-datasources
+        resources:
+          limits:
+            memory: 400Mi
+          requests:
+            cpu: 100m
+            memory: 200Mi
         securityContext:
           allowPrivilegeEscalation: false
           capabilities:
@@ -141,6 +153,12 @@ spec:
           successThreshold: 1
           timeoutSeconds: 30
         name: grafana
+        resources:
+          limits:
+            memory: 400Mi
+          requests:
+            cpu: 100m
+            memory: 200Mi
         ports:
         - containerPort: 3000
           name: grafana
